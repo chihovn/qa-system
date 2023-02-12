@@ -10,14 +10,14 @@ from transformers import DPRQuestionEncoder, DPRQuestionEncoderTokenizer
 
 dotenv.load_dotenv()
 
-DBNAME=os.getenv("DBNAME", "wiki_db")
-HOST=os.getenv("HOST", "103.179.190.246")
-PORT=os.getenv("PORT", "11111")
-USER=os.getenv("DB_USER", "wiki_admin")
-PWD=os.getenv("PASSWORD", "55235")
-TB_CLIENT=os.getenv("TB_CLIENT","client_tb")
-TB_WIKI=os.getenv("TB_WIKI", "wiki_tb")
-MSD_WIKI = bool(os.getenv("MSD_WIKI", False))
+DBNAME=os.getenv("DBNAME")
+HOST=os.getenv("HOST")
+PORT=os.getenv("PORT")
+USER=os.getenv("DB_USER")
+PWD=os.getenv("PASSWORD")
+TB_CLIENT=os.getenv("TB_CLIENT")
+TB_WIKI=os.getenv("TB_WIKI")
+MSD_WIKI = bool(os.getenv("MSD_WIKI"))
 
 def query_qa_dense_index(
         question: str, 
