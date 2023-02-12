@@ -8,8 +8,6 @@ from matplotlib.style import use
 from tqdm.notebook import tqdm
 from transformers import DPRQuestionEncoder, DPRQuestionEncoderTokenizer
 
-from utils.schema import Document
-
 dotenv.load_dotenv()
 
 DBNAME=os.getenv("DBNAME", "wiki_db")
@@ -21,7 +19,6 @@ TB_CLIENT=os.getenv("TB_CLIENT","client_tb")
 TB_WIKI=os.getenv("TB_WIKI", "wiki_tb")
 MSD_WIKI = bool(os.getenv("MSD_WIKI", False))
 
-#TODO: Use this function
 def query_qa_dense_index(
         question: str, 
         qs_model, 

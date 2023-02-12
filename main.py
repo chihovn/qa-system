@@ -84,7 +84,7 @@ def main():
         print('---End answer---')
 
         is_continue = input('Continue (y/n): ')
-        if is_continue.lower() == 'n':
+        if is_continue.strip().lower() == 'n':
             break
 
 
