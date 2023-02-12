@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+scipy
+tqdm 
+transformers==4.20.1
+datasets
+psycopg2-binary
+pydantic
+beautifulsoup4
+python-dotenv
+windows-curses==2.3.1
